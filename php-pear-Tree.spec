@@ -1,10 +1,11 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Tree
+%define		_status		beta
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Generic tree management
 Summary(pl):	%{_pearname} - Podstawowe zarz±dzanie drzewami
 Name:		php-pear-%{_pearname}
-Version:	0.2.1
+Version:	0.2.2
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -30,6 +31,8 @@ trees and the nested set model). The package is designed that way that
 it is possible to convert/copy tree data from either structure to
 another (from XML into DB).
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Ten pakiet udostêpnia metody do odczytu i obróbki drzew zapisanych w
 bazach danych lub plikach XML. Drzewa mog± byæ zapisane w bazie jako
@@ -44,6 +47,8 @@ miarê potrzeby (bardzo przydatny w przypadku du¿ych drzew i modelu
 zagnie¿d¿onego). Pakiet jest stworzony tak, by umo¿liwiæ konwersjê i
 kopiowanie danych z drzewa z jednej struktury do drugiej (z XML do
 DB).
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
@@ -61,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/examples/*
+%doc %{_pearname}-%{version}/docs/*
 %dir %{php_pear_dir}/%{_class}
 %dir %{php_pear_dir}/%{_class}/Dynamic
 %dir %{php_pear_dir}/%{_class}/Memory
