@@ -46,7 +46,7 @@ danych z miejsca gdzie s± zapisane - jeden przez wczytanie ca³ego
 drzewa do pamiêci (metoda pamiêciowa), drugi przez czytanie wêz³ów w
 miarê potrzeby (bardzo przydatny w przypadku du¿ych drzew i modelu
 zagnie¿d¿onego). Pakiet jest stworzony tak, by umo¿liwiæ konwersjê i
-kopiowanie danych z drzewa z jednej struktury do drugiej (z XML do
+kopiowanie danych z drzewa z jednej struktury do drugiej (z XML-a do
 DB).
 
 Ta klasa ma w PEAR status: %{_status}.
