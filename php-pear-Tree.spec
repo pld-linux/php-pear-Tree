@@ -5,7 +5,7 @@ Summary:	%{_pearname} - Generic tree management
 Summary(pl):	%{_pearname} - Podstawowe zarz±dzanie drzewami
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -19,17 +19,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Provides methods to read and manipulate trees, which are stored in the
 DB or an XML file. The trees can be stored in the DB either as nested
-trees. Or as simple trees ('brain dead method'), which use
+trees or as simple trees ('brain dead method'), which use
 parentId-like structure. Currently XML data can only be read from a
 file and accessed. The package offers a big number of methods to
 access and manipulate trees. For example methods like: getRoot,
 getChild[ren], getParent, getPath and many more. There are two ways of
-retreiving the data from the place where they are stored, one is by
+retrieving the data from the place where they are stored, one is by
 reading the entire tree into the memory - the Memory way. The other is
 reading the tree nodes as needed (very useful in combination with huge
 trees and the nested set model). The package is designed that way that
 it is possible to convert/copy tree data from either structure to
 another (from XML into DB).
+
+%description -l pl
+Ten pakiet udostêpnia metody do odczytu i obróbki drzew zapisanych w
+bazach danych lub plikach XML. Drzewa mog± byæ zapisane w bazie jako
+zagnie¿d¿one drzewa lub proste drzewa (metoda prymitywna), które
+u¿ywaj± struktury w stylu parentId. Aktualnie dane XML mog± byæ tylko
+czytane tylko z pliku i przegl±dane. Pakiet oferuje du¿± liczbê metod
+do dostêpu i obróbki drzew, na przyk³ad getRoot, getChild[ren],
+getParent, getPath i wiele innych. S± dwa sposoby na odczytywanie
+danych z miejsca gdzie s± zapisane - jeden przez wczytanie ca³ego
+drzewa do pamiêci (metoda pamiêciowa), drugi przez czytanie wêz³ów w
+miarê potrzeby (bardzo przydatny w przypadku du¿ych drzew i modelu
+zagnie¿d¿onego). Pakiet jest stworzony tak, by umo¿liwiæ konwersjê i
+kopiowanie danych z drzewa z jednej struktury do drugiej (z XML do
+DB).
 
 %prep
 %setup -q -c
