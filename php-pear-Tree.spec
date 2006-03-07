@@ -12,6 +12,7 @@ Group:		Development/Languages/PHP
 # Source0-md5:	acd4b47b0763ba302d28bc374f61abad
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Tree/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-DB >= 1.3
