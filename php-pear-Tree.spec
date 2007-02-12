@@ -3,7 +3,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Generic tree management
-Summary(pl):	%{_pearname} - Podstawowe zarz±dzanie drzewami
+Summary(pl.UTF-8):   %{_pearname} - Podstawowe zarzÄ…dzanie drzewami
 Name:		php-pear-%{_pearname}
 Version:	0.2.4
 Release:	4
@@ -38,18 +38,18 @@ another (from XML into DB).
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet udostêpnia metody do odczytu i obróbki drzew zapisanych w
-bazach danych lub plikach XML. Drzewa mog± byæ zapisane w bazie jako
-zagnie¿d¿one drzewa lub proste drzewa (metoda prymitywna), które
-u¿ywaj± struktury w stylu parentId. Aktualnie dane XML mog± byæ tylko
-czytane tylko z pliku i przegl±dane. Pakiet oferuje du¿± liczbê metod
-do dostêpu i obróbki drzew, na przyk³ad getRoot, getChild[ren],
-getParent, getPath i wiele innych. S± dwa sposoby na odczytywanie
-danych z miejsca gdzie s± zapisane - jeden przez wczytanie ca³ego
-drzewa do pamiêci (metoda pamiêciowa), drugi przez czytanie wêz³ów w
-miarê potrzeby (bardzo przydatny w przypadku du¿ych drzew i modelu
-zagnie¿d¿onego). Pakiet jest stworzony tak, by umo¿liwiæ konwersjê i
+%description -l pl.UTF-8
+Ten pakiet udostÄ™pnia metody do odczytu i obrÃ³bki drzew zapisanych w
+bazach danych lub plikach XML. Drzewa mogÄ… byÄ‡ zapisane w bazie jako
+zagnieÅ¼dÅ¼one drzewa lub proste drzewa (metoda prymitywna), ktÃ³re
+uÅ¼ywajÄ… struktury w stylu parentId. Aktualnie dane XML mogÄ… byÄ‡ tylko
+czytane tylko z pliku i przeglÄ…dane. Pakiet oferuje duÅ¼Ä… liczbÄ™ metod
+do dostÄ™pu i obrÃ³bki drzew, na przykÅ‚ad getRoot, getChild[ren],
+getParent, getPath i wiele innych. SÄ… dwa sposoby na odczytywanie
+danych z miejsca gdzie sÄ… zapisane - jeden przez wczytanie caÅ‚ego
+drzewa do pamiÄ™ci (metoda pamiÄ™ciowa), drugi przez czytanie wÄ™zÅ‚Ã³w w
+miarÄ™ potrzeby (bardzo przydatny w przypadku duÅ¼ych drzew i modelu
+zagnieÅ¼dÅ¼onego). Pakiet jest stworzony tak, by umoÅ¼liwiÄ‡ konwersjÄ™ i
 kopiowanie danych z drzewa z jednej struktury do drugiej (z XML-a do
 DB).
 
