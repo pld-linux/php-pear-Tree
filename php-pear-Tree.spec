@@ -3,7 +3,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Generic tree management
-Summary(pl.UTF-8):   %{_pearname} - Podstawowe zarządzanie drzewami
+Summary(pl.UTF-8):	%{_pearname} - Podstawowe zarządzanie drzewami
 Name:		php-pear-%{_pearname}
 Version:	0.2.4
 Release:	4
