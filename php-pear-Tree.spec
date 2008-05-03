@@ -5,12 +5,12 @@
 Summary:	%{_pearname} - Generic tree management
 Summary(pl.UTF-8):	%{_pearname} - Podstawowe zarządzanie drzewami
 Name:		php-pear-%{_pearname}
-Version:	0.3.1
-Release:	2
+Version:	0.3.3
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	9a8adb93b25a47f337c3730f9037b0e9
+# Source0-md5:	0eafae27c10bd7a5dc19360f54e7fb3a
 URL:		http://pear.php.net/package/Tree/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
