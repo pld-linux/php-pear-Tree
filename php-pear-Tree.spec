@@ -21,6 +21,7 @@ Requires:	php-pear-PEAR-core >= 1:1.5.4
 Requires:	php-pear-XML_Parser >= 1.0
 Suggests:	php-pear-DB
 Suggests:	php-pear-XML_Parser
+Obsoletes:	php-pear-Tree-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -61,20 +62,6 @@ DB).
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 
@@ -106,7 +93,3 @@ fi
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/Dynamic/*.php
 %{php_pear_dir}/%{_class}/Memory/*.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
