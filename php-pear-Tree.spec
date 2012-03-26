@@ -1,16 +1,16 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		Tree
 %define		_status		beta
 %define		_pearname	%{_class}
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Generic tree management
 Summary(pl.UTF-8):	%{_pearname} - Podstawowe zarządzanie drzewami
 Name:		php-pear-%{_pearname}
-Version:	0.3.4
-Release:	3
+Version:	0.3.7
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	d5d8e392edf3dc5c04e6342979200eb9
+# Source0-md5:	bddfbe4ba03da2904ea8f20d4ab22b08
 URL:		http://pear.php.net/package/Tree/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
