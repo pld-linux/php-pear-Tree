@@ -1,7 +1,6 @@
 %define		_class		Tree
 %define		_status		beta
 %define		_pearname	%{_class}
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Generic tree management
 Summary(pl.UTF-8):	%{_pearname} - Podstawowe zarządzanie drzewami
 Name:		php-pear-%{_pearname}
